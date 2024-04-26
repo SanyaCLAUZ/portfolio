@@ -4,15 +4,18 @@ import styled from "styled-components";
 
 type IconPropsType = {
   iconId: string;
+  width?: string;
+  height?: string;
+  viewBox?: string;
 };
 
 export const Logo = (props: IconPropsType) => {
   return (
     <StyledLogo href="/">
       <svg
-        width="65"
-        height="48"
-        viewBox="0 0 65 48"
+        width={props.width || "65px"}
+        height={props.height || "50px"}
+        viewBox={props.viewBox || "0 0 65 50"}
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -22,10 +25,4 @@ export const Logo = (props: IconPropsType) => {
   );
 };
 
-const StyledLogo = styled.a`
-  a,
-  svg {
-    width: 124px;
-    height: 124px;
-  }
-`;
+const StyledLogo = styled.a``;
