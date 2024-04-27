@@ -1,6 +1,7 @@
 import styled from "styled-components";
-import { Logo } from "../../../../components/logo/logo";
-import { Menu } from "../../../../components/menu/Menu";
+import { Logo } from "../../components/logo/logo";
+import { Menu } from "../../components/menu/Menu";
+
 
 export const Header = () => {
   return (
@@ -12,7 +13,7 @@ export const Header = () => {
 };
 
 const StyledHeader = styled.header`
-  background-color: #728fa8;
+  background: linear-gradient(to right, #2c2c2c, #1c1c1c);
   display: flex;
   justify-content: space-between;
 `;
