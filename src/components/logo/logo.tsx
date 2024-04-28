@@ -17,6 +17,7 @@ export const Logo = (props: IconPropsType) => {
         height={props.height || "50px"}
         viewBox={props.viewBox || "0 0 65 50"}
         fill="none"
+        stroke="white"
         xmlns="http://www.w3.org/2000/svg"
       >
         <use xlinkHref={`${iconsSprite}#${props.iconId}`} />
