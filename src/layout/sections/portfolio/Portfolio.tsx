@@ -2,12 +2,13 @@ import React from "react";
 import styled from "styled-components";
 import { FlexWrapper } from "../../../components/FlexWrapper";
 import { ProjectForPortfolioCard } from "./ProjectForPortfolioCard";
+import photo from "../../../assets/images/cardPortfolioPicture.webp"
 
 export const Portfolio = () => {
   return (
     <StyledPortfolio>
       <h2>Portfolio</h2>
-      <ProjectForPortfolioCard />
+      <ProjectForPortfolioCard src = {photo}/>
     </StyledPortfolio>
   );
 };

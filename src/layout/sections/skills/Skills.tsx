@@ -12,6 +12,8 @@ export const Skills = () => {
         <SkillCard iconId={"presentation"} text={"Frontend"} />
         <SkillCard iconId={"presentation"} text={"Frontend"} />
         <SkillCard iconId={"presentation"} text={"Frontend"} />
+        <SkillCard iconId={"presentation"} text={"Frontend"} />
+        <SkillCard iconId={"presentation"} text={"Frontend"} />
       </FlexWrapper>
     </StyledSkills>
   );

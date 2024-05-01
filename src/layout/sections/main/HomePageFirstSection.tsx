@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Title } from "./Title";
 import { FlexWrapper } from "../../../components/FlexWrapper";
-import photo from "../../../assets/images/portfolioPicture.webp";
+import photo from "../../../assets/images/portfolioPictureWithHeigh.webp";
 
 export const HomePageFirstSection = () => {
   return (
@@ -21,7 +21,7 @@ const StyledHomePageFirstSection = styled.div`
 `;
 
 const StyledPhoto = styled.img`
-scale: 70%;
+height: 670px;
   width: 620px;
   object-fit: scale-down;
 `;
