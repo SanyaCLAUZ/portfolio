@@ -8,7 +8,7 @@ export const Portfolio = () => {
   return (
     <StyledPortfolio>
       <h2>Portfolio</h2>
-      <ProjectForPortfolioCard src = {photo}/>
+      <ProjectForPortfolioCard src = {photo} title="Landing Ice-cream"/>
     </StyledPortfolio>
   );
 };
@@ -16,6 +16,7 @@ export const Portfolio = () => {
 const StyledPortfolio = styled.div`
   text-align: center;
   h2 {
+    padding-top: 40px;
     margin: 0;
   }
 `;

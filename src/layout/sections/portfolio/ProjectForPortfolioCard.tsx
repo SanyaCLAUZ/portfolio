@@ -4,6 +4,8 @@ import styled from "styled-components";
 
 type ProjectForPortfolioCardType = {
   src?: string;
+  title?: string;
+  body?: string;
 };
 
 export const ProjectForPortfolioCard = (props: ProjectForPortfolioCardType) => {
@@ -14,8 +16,8 @@ export const ProjectForPortfolioCard = (props: ProjectForPortfolioCardType) => {
         <div>
           <img src={props.src}></img>
           <div>
-            <h3>Landing Ice-cream</h3>
-            <div>
+            <h3>{props?.title || "Default title"}</h3>
+            <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut
               orci eu elit consequat posuere ut sed elit. Nulla et tristique
               felis. Morbi quis orci non purus blandit fringilla. Etiam et
@@ -24,7 +26,7 @@ export const ProjectForPortfolioCard = (props: ProjectForPortfolioCardType) => {
               nec mollis. Phasellus efficitur et ex vel condimentum. Cras enim
               purus, tempor sed massa vel, accumsan bibendum magna. Nullam
               hendrerit cursus purus, sit amet viverra arcu gravida vel.
-            </div>
+            </p>
             <a>More →</a>
           </div>
         </div>
@@ -35,17 +37,21 @@ export const ProjectForPortfolioCard = (props: ProjectForPortfolioCardType) => {
 };
 
 const StyledProjectForPortfolioCard = styled.div`
-  text-align: center;
-  border-radius: 40px;
   padding: 50px;
+  text-align: center;
+  height: 80vh;
+  border-radius: 40px;
   width: 60%;
   img {
     border-radius: 20px;
     width: 40%;
   }
-  div {
+  div div {
     background: linear-gradient(to right, #414141, #2d2d2d);
     border-radius: 20px;
+  }
+
+  p {
   }
   button {
     color: white;

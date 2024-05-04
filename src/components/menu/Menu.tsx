@@ -23,7 +23,7 @@ export const Menu = () => {
 };
 
 const StyledMenu = styled.nav`
-      color: white;
+    color: white;
   ul {
     text-decoration: inherit;
     display: flex;

@@ -7,13 +7,56 @@ export const Skills = () => {
   return (
     <StyledSkills>
       <FlexWrapper justify="center" wrap="wrap">
-        <SkillCard iconId={"presentation"} text={"Frontend"} />
-        <SkillCard iconId={"presentation"} text={"Frontend"} />
-        <SkillCard iconId={"presentation"} text={"Frontend"} />
-        <SkillCard iconId={"presentation"} text={"Frontend"} />
-        <SkillCard iconId={"presentation"} text={"Frontend"} />
-        <SkillCard iconId={"presentation"} text={"Frontend"} />
-        <SkillCard iconId={"presentation"} text={"Frontend"} />
+        <SkillCard
+          iconId={"presentation"}
+          text={"Frontend"}
+          height="75px"
+          width="75px"
+          viewBox="0 0 25 25"
+        />
+        <SkillCard
+          iconId={"presentation"}
+          text={"Frontend"}
+          height="75px"
+          width="75px"
+          viewBox="0 0 25 25"
+        />
+        <SkillCard
+          iconId={"presentation"}
+          text={"Frontend"}
+          height="75px"
+          width="75px"
+          viewBox="0 0 25 25"
+        />
+        <SkillCard
+          iconId={"presentation"}
+          text={"Frontend"}
+          height="75px"
+          width="75px"
+          viewBox="0 0 25 25"
+        />
+        <SkillCard
+          iconId={"presentation"}
+          text={"Frontend"}
+          height="75px"
+          width="75px"
+          viewBox="0 0 25 25"
+        />
+        <SkillCard
+          iconId={"presentation"}
+          text={"Frontend"}
+          height="75px"
+          width="75px"
+          viewBox="0 0 25 25"
+        />
+        <SkillCard
+          iconId={"presentation"}
+          text={"Frontend"}
+          height="75px"
+          width="75px"
+          viewBox="0 0 25 25"
+        />
+        
       </FlexWrapper>
     </StyledSkills>
   );
@@ -22,6 +65,5 @@ export const Skills = () => {
 const StyledSkills = styled.div`
   min-height: 100vh;
   background: linear-gradient(to right, #414141, #2d2d2d);
-  text-align: center;
-  padding: 60px 30px 0 30px;
+  padding: 60px 100px 0 100px;
 `;
