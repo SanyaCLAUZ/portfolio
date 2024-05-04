@@ -31,7 +31,7 @@ export const SkillCard = (props: SkillCardTypes) => {
 const StyledSkillCard = styled.div`
 span {
   font-size: 24px;
-  color:  #E4E4E4;
+  color: #E4E4E4;
 
 }
   width: 270px;

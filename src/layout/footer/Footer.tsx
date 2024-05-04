@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Logo } from "../../components/logo/logo";
 import { FlexWrapper } from "../../components/FlexWrapper";
+import { YellowStyledButton } from "../../components/globalYellowStyledButton/YellowStyledButton";
 
 export const Footer = () => {
   return (
@@ -21,8 +22,10 @@ export const Footer = () => {
         </ul>
         <div>
           <div>
-            <Logo iconId="logo" width="40px" height="40px"></Logo>
-            <button>|</button>
+            <a href="/">
+            <Logo iconId="logo" width="65px" height="48px" viewBox="0 0 48 65"></Logo>
+            <YellowStyledButton rotation={-90} />
+            </a>
           </div>
           <div>Copyright © 2021, Notitanic</div>
         </div>
@@ -34,4 +37,8 @@ const StyledFooter = styled.footer`
   display: flex;
   justify-content: space-between;
   background: linear-gradient(to right, #414141, #2d2d2d);
+  a{
+    display: flex;
+  justify-content: space-between;
+  }
 `;

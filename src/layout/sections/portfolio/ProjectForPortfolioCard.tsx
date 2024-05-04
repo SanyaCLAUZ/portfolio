@@ -1,6 +1,7 @@
 import React from "react";
 import { FlexWrapper } from "../../../components/FlexWrapper";
 import styled from "styled-components";
+import { YellowStyledButton } from "../../../components/globalYellowStyledButton/YellowStyledButton";
 
 type ProjectForPortfolioCardType = {
   src?: string;
@@ -12,9 +13,11 @@ export const ProjectForPortfolioCard = (props: ProjectForPortfolioCardType) => {
   return (
     <StyledProjectForPortfolioCard>
       <FlexWrapper justify="center">
-        <button>←</button>
+        <YellowStyledButton rotation={180} />
         <div>
-          <img src={props.src}></img>
+          <div>
+            <img src={props.src}></img>
+          </div>
           <div>
             <h3>{props?.title || "Default title"}</h3>
             <p>
@@ -27,37 +30,28 @@ export const ProjectForPortfolioCard = (props: ProjectForPortfolioCardType) => {
               purus, tempor sed massa vel, accumsan bibendum magna. Nullam
               hendrerit cursus purus, sit amet viverra arcu gravida vel.
             </p>
-            <a>More →</a>
+            <strong>
+              <a>More →</a>
+            </strong>
           </div>
         </div>
-        <button>→</button>
+        <YellowStyledButton />
       </FlexWrapper>
     </StyledProjectForPortfolioCard>
   );
 };
 
 const StyledProjectForPortfolioCard = styled.div`
-  padding: 50px;
-  text-align: center;
-  height: 80vh;
+  margin: 50px;
   border-radius: 40px;
-  width: 60%;
   img {
-    border-radius: 20px;
+    margin-top: 40px;
+    border-radius: 40px;
     width: 40%;
   }
-  div div {
+  div div{
     background: linear-gradient(to right, #414141, #2d2d2d);
     border-radius: 20px;
-  }
-
-  p {
-  }
-  button {
-    color: white;
-    background: linear-gradient(to right, #e2a300, #e29500);
-    height: 30px;
-    border-radius: 24px;
   }
   a {
     color: #e2a100;
