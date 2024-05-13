@@ -12,13 +12,11 @@ type ProjectForPortfolioCardType = {
 export const ProjectForPortfolioCard = (props: ProjectForPortfolioCardType) => {
   return (
     <StyledProjectForPortfolioCard>
-      <FlexWrapper justify="center">
+      <FlexWrapper justify="center" align={"center"}>
         <YellowStyledButton rotation={180} />
-        <div>
-          <div>
-            <img src={props.src}></img>
-          </div>
-          <div>
+        <div id={"card"}>
+            <img src={props.src} alt={"card"}></img>
+          <div >
             <h3>{props?.title || "Default title"}</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut
@@ -42,18 +40,27 @@ export const ProjectForPortfolioCard = (props: ProjectForPortfolioCardType) => {
 };
 
 const StyledProjectForPortfolioCard = styled.div`
-  margin: 50px;
+  width: 75%;
+  margin: 50px auto;
   border-radius: 40px;
+  
   img {
-    margin-top: 40px;
     border-radius: 40px;
-    width: 40%;
+    height: 30%;
   }
-  div div{
+  
+  #card {
     background: linear-gradient(to right, #414141, #2d2d2d);
     border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
   }
+  
+  #card div{   
+    max-width: 30%;
+  }
+  
   a {
-    color: #e2a100;
+  color: #e2a100;
   }
 `;

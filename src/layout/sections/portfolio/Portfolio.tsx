@@ -14,9 +14,11 @@ export const Portfolio = () => {
 };
 
 const StyledPortfolio = styled.div`
-  text-align: center;
-  h2 {
-    padding-top: 40px;
-    margin: 0;
-  }
+    text-align: center;
+    padding-bottom: 50px;
+    background: linear-gradient(to right, #2C2C2C, #1C1C1C);
+    h2 {
+        padding-top: 40px;
+        margin: 0;
+    }
 `;

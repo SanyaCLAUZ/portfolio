@@ -1,24 +1,22 @@
-import './App.css';
-import { Header } from './layout/header/Header';
-import { Skills } from './layout/sections/skills/Skills';
-import { HomePageFirstSection } from './layout/sections/main/HomePageFirstSection';
-import './assets/fonts/Jersey15-Regular.ttf';
-import { AboutSection } from './layout/sections/about/AboutSection';
-import { Portfolio } from './layout/sections/portfolio/Portfolio';
-import { Footer } from './layout/footer/Footer';
-
+import "./App.css";
+import "./assets/fonts/Jersey15-Regular.ttf";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Contact } from "./pages/Contact";
+import { Layout } from "./pages/Layout";
+import { Home } from "./pages/Home";
 
 function App() {
-    return (
-        <div className="App">
-            <Header/>
-            <HomePageFirstSection/>
-            <Skills/>
-            <AboutSection backgroundSrc = {"ellips"}/>
-            <Portfolio/>
-            <Footer/>
-        </div>
-    );
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+           <Route index element={<Home />} />
+          {/*<Route path="blogs" element={<Blogs />} /> */}
+          <Route path="./pages/Contact" element={<Contact/>} />
+          {/* <Route path="*" element={<NoPage />} /> */}
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
 }
-
 export default App;

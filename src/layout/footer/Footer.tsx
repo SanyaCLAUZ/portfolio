@@ -7,7 +7,6 @@ import { YellowStyledButton } from "../../components/globalYellowStyledButton/Ye
 export const Footer = () => {
   return (
     <StyledFooter>
-      <FlexWrapper justify="center">
         <ul>
           <li>Home</li>
           <li>About me</li>
@@ -29,16 +28,18 @@ export const Footer = () => {
           </div>
           <div>Copyright © 2021, Notitanic</div>
         </div>
-      </FlexWrapper>
     </StyledFooter>
   );
 };
 const StyledFooter = styled.footer`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   background: linear-gradient(to right, #414141, #2d2d2d);
-  a{
+  li{
+    list-style: none;
+  }
+  a {
     display: flex;
-  justify-content: space-between;
+    justify-content: space-between;
   }
 `;

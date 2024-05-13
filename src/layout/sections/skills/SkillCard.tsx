@@ -15,7 +15,7 @@ type SkillCardTypes = {
 export const SkillCard = (props: SkillCardTypes) => {
   return (
     <StyledSkillCard>
-      <FlexWrapper direction="column">
+      <FlexWrapper direction="column" justify={"space-around"} align="center" style={{ height: "100%" }}>
         <Icon
           iconId={props.iconId || "logo"}
           width={props.width || "65px"}
@@ -32,7 +32,6 @@ const StyledSkillCard = styled.div`
 span {
   font-size: 24px;
   color: #E4E4E4;
-
 }
   width: 270px;
   height: 270px;

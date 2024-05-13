@@ -65,5 +65,5 @@ export const Skills = () => {
 const StyledSkills = styled.div`
   min-height: 100vh;
   background: linear-gradient(to right, #414141, #2d2d2d);
-  padding: 60px 100px 0 100px;
+  padding: 30px 50px;
 `;
