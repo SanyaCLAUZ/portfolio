@@ -5,12 +5,14 @@ import reportWebVitals from './reportWebVitals';
 import { RouterProvider } from "react-router-dom";
 import './assets/fonts/ArodoraPro-Light.otf';
 import { router } from "./routes/Routes";
+import {GlobalStyled} from "./styles/Global.styled";
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 
 root.render(
     <React.StrictMode>
+        <GlobalStyled/>
         <RouterProvider router={router} />
     </React.StrictMode>
 );
