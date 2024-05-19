@@ -43,7 +43,8 @@ export const AboutSection = (props: AboutSectionProps) => {
     );
 };
 
-const StyledAbout = styled.div<AboutSectionProps>`
+const StyledAbout = styled.section<AboutSectionProps>`
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -51,6 +52,7 @@ const StyledAbout = styled.div<AboutSectionProps>`
     height: 100vh;
     background-image: url(${(props) => props.backgroundSrc ? `${props.backgroundSrc}` : ""});
     background-repeat: no-repeat;
+    background-size: 120vw;
     
     #images{
         display: flex;

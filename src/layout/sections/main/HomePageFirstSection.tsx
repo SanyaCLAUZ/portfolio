@@ -15,9 +15,8 @@ export const HomePageFirstSection = () => {
   );
 };
 
-const StyledHomePageFirstSection = styled.div`
+const StyledHomePageFirstSection = styled.section`
   height: 100vh;
-  background: linear-gradient(to right, #2c2c2c, #1c1c1c)
 `;
 
 const StyledPhoto = styled.img`

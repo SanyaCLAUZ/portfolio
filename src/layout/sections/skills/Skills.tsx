@@ -62,8 +62,7 @@ export const Skills = () => {
   );
 };
 
-const StyledSkills = styled.div`
+const StyledSkills = styled.section`
   min-height: 100vh;
-  background: linear-gradient(to right, #414141, #2d2d2d);
   padding: 30px 50px;
 `;
