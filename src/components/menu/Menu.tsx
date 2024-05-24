@@ -1,40 +1,45 @@
 import React from "react";
 import styled from "styled-components";
-import { BrowserRouter, Routes, Route, Link, Outlet } from "react-router-dom";
+import {Link} from "react-router-dom";
 
 export const Menu = () => {
   return (
-    <>
     <StyledMenu>
         <ul>
           <li>
-            <a href={"/"}> Home </a>
+            <Link to={"/"}> Home </Link>
           </li>
           <li>
-            <a href=""> About </a>
+            <Link to={"/"}> About </Link>
           </li>
           <li>
-            <a href=""> Portfolio </a>
+            <Link to={"/"}> Portfolio </Link>
           </li> 
           <li>
             <Link 
-              to='/contact'>Contacts
+              to={'/contact'}>Contacts
             </Link>
             </li>
         </ul>
     </StyledMenu>
-    </>
   );
 };
 
 const StyledMenu = styled.nav`
-  color: white;
   ul {
     text-decoration: inherit;
     display: flex;
     gap: 30px;
   }
+li{
+  transition: 0.2s;
+}
   a {
     all: unset;
+  }
+
+  li:hover {
+    color: #494949;
+    cursor: pointer;
   }
 `;

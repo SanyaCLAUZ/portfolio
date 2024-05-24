@@ -11,9 +11,8 @@ export const GlobalStyled = createGlobalStyle`
     }
 
     body {
-        background-color: ${theme.colors.buttonColor}
         margin: 0;
-        color: #E4E4E4;
+        color: ${theme.colors.text};
         font-family: "Ubuntu Sans", sans-serif;
         font-optical-sizing: auto;
         font-weight: 100;

@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Icon } from "../icon/Icon";
+import {theme} from "../../styles/Theme";
 
 type YellowStyledButtonProp = {
   rotation?: number;
@@ -25,7 +26,7 @@ const StyledYellowStyledButton = styled.button<YellowStyledButtonProp>`
   margin: auto;
   text-align: center;
   color: white;
-  background: linear-gradient(to right, #e2a300, #e29500);
+  background: ${theme.colors.buttonColor};
   height: 50px;
   border-radius: 30px;
   transform: rotate(

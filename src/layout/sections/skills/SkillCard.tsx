@@ -33,8 +33,8 @@ span {
   font-size: 24px;
   color: #E4E4E4;
 }
-  width: 270px;
-  height: 270px;
+  width: 250px;
+  height: 250px;
   border-radius: 29px;
   margin: 20px;
   background-color: #2a2a2a;
