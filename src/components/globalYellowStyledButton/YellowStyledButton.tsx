@@ -32,4 +32,7 @@ const StyledYellowStyledButton = styled.button<YellowStyledButtonProp>`
   transform: rotate(
     ${(props) => (props.rotation ? `${props.rotation}deg` : "0deg")}
   );
+    :hover{
+        cursor: pointer;
+    }
 `;

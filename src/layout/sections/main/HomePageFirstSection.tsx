@@ -7,7 +7,8 @@ import {Container} from "../../../components/Container";
 
 export const HomePageFirstSection = () => {
     return (
-        <StyledHomePageFirstSection>
+        //id "headerSection" for footer якорь
+        <StyledHomePageFirstSection id={"headerSection"}>
             <Container>
                 <FlexWrapper align={"center"} justify={"space-between"}>
                         <Title/>

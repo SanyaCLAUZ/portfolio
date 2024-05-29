@@ -3,6 +3,7 @@ import styled from "styled-components";
 import iconsSprite from "../../../assets/images/code-svg.svg";
 import { FlexWrapper } from "../../../components/FlexWrapper";
 import { Icon } from "../../../components/icon/Icon";
+import {theme} from "../../../styles/Theme";
 
 type SkillCardTypes = {
   iconId: string;
@@ -29,10 +30,17 @@ export const SkillCard = (props: SkillCardTypes) => {
 };
 
 const StyledSkillCard = styled.div`
-span {
-  font-size: 24px;
-  color: #E4E4E4;
-}
+  span {
+    font-size: 24px;
+    color: ${theme.colors.text};
+    user-select: none;
+  }
+
+  :hover {
+    background-color: #313131;
+  }
+
+  transition: 0.7s;
   width: 250px;
   height: 250px;
   border-radius: 29px;

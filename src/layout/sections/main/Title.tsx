@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import {theme} from "../../../styles/Theme";
 import {Link} from "react-router-dom";
+import {theme} from "../../../styles/Theme";
 
 export const Title = () => {
     return (
@@ -21,7 +21,7 @@ export const Title = () => {
 };
 
 const StyledTitle = styled.div`
-    max-width: 430px;
+    max-width: 40%;
 
     h3 {
         font-size: 48px;
@@ -38,6 +38,7 @@ const StyledTitle = styled.div`
     }
 
     button {
+        width: 40%;
         font-family: "Jersey15-Regular", sans-serif;
         font-optical-sizing: auto;
         font-weight: 500;
@@ -47,5 +48,10 @@ const StyledTitle = styled.div`
         border-radius: 5px;
         padding: 10px;
         box-shadow: 1px 1px 10px rgba(226, 163, 0, 0.58);
+        transition: 0.5s;
     }
+
+    button:hover {
+        background-color: ${theme.colors.text};
+        cursor: pointer;
 `;

@@ -39,8 +39,6 @@ export const Footer = () => {
     );
 };
 const StyledFooter = styled.footer`
-    background: linear-gradient(to right, #414141, #2d2d2d);
-
     #websiteScroll {
         display: flex;
         justify-content: space-between;
