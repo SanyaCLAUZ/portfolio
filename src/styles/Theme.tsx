@@ -4,5 +4,8 @@ export const theme = {
         secondaryBg: "linear-gradient(to right, #2C2C2C, #1C1C1C)",
         buttonColor: "linear-gradient(to right, #e2a300, #e29500)",
         text:"#E4E4E4",
+        red: "red",
+        darkGray: "#3b3b3b",
+        buttonColorNotLinear: "#e2a300",
     }
 }
