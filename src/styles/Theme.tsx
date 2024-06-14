@@ -7,5 +7,7 @@ export const theme = {
         red: "red",
         darkGray: "#3b3b3b",
         buttonColorNotLinear: "#e2a300",
-    }
+        skillsIcon: "#00C4F0",
+
+}
 }

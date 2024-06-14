@@ -17,7 +17,10 @@ export function Contact() {
 }
 
 const StyledContactUs = styled.div `
-    display: flex;
-    flex-direction: column;
+    height: 100vh;
+    text-align: center;
     align-items: center;
+    form {
+        margin:  0 auto;
+    }
 `

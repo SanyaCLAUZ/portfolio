@@ -8,7 +8,7 @@ export const Portfolio = () => {
     return (
         <StyledPortfolio>
             <Container>
-                <h2>Portfolio</h2>
+                <h2>PORTFOLIO</h2>
                 <ProjectForPortfolioCard src={photo} title="Landing Ice-cream"/>
             </Container>
         </StyledPortfolio>
@@ -21,5 +21,6 @@ const StyledPortfolio = styled.section`
     h2 {
         padding-top: 40px;
         margin: 0;
+        font-size: 40px;
     }
 `;

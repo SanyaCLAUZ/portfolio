@@ -5,6 +5,7 @@ import {theme} from "../../styles/Theme";
 
 type YellowStyledButtonProp = {
   rotation?: number;
+    stroke?: string;
 };
 
 export const YellowStyledButton = (props: YellowStyledButtonProp) => {
@@ -15,6 +16,7 @@ export const YellowStyledButton = (props: YellowStyledButtonProp) => {
         width="36px"
         height="36px"
         viewBox="0 0 36 36"
+        stroke={props.stroke}
       ></Icon>
     </StyledYellowStyledButton>
   );
@@ -27,7 +29,8 @@ const StyledYellowStyledButton = styled.button<YellowStyledButtonProp>`
   text-align: center;
   color: white;
   background: ${theme.colors.buttonColor};
-  height: 50px;
+  height: 60px;
+  width: 60px;
   border-radius: 30px;
   transform: rotate(
     ${(props) => (props.rotation ? `${props.rotation}deg` : "0deg")}

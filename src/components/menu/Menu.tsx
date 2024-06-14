@@ -26,9 +26,13 @@ const Link = styled.a`
 
 const StyledMenu = styled.nav`
     ul {
+        font-size: 18px;
+        font-weight: 300;
+        text-align: left;
+
         text-decoration: inherit;
         display: flex;
-        gap: 30px;
+        gap: 145px;
     }
 `;
 
@@ -71,15 +75,15 @@ const ListItem = styled.li`
         &:before{
             scale: 1;
         }
-        ${Mask} {
-            color: ${theme.colors.buttonColorNotLinear};
-            transition: 0.2s;
-            transform: skewX(12deg) translateX(1%);
-
-            & + ${Mask} {
-            transition: 0.2s;
-            transform: skewX(12deg) translateX(-1%);
-            }
+            ${Mask} {
+                color: ${theme.colors.buttonColorNotLinear};
+                transition: 0.2s;
+                transform: skewX(12deg) translateX(1%);
+    
+                & + ${Mask} {
+                transition: 0.2s;
+                transform: skewX(12deg) translateX(-1%);
+            } 
         }
-        }
+    }
 `

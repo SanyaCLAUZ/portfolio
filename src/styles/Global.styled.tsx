@@ -21,6 +21,7 @@ export const GlobalStyled = createGlobalStyle`
         background: linear-gradient(to right, #414141, #2d2d2d);
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+        line-height: 1.2;
     }
 
     a {

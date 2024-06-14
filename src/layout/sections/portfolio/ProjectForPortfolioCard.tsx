@@ -2,6 +2,7 @@ import React from "react";
 import { FlexWrapper } from "../../../components/FlexWrapper";
 import styled from "styled-components";
 import { YellowStyledButton } from "../../../components/globalYellowStyledButton/YellowStyledButton";
+import {theme} from "../../../styles/Theme";
 
 type ProjectForPortfolioCardType = {
   src?: string;
@@ -12,11 +13,10 @@ type ProjectForPortfolioCardType = {
 export const ProjectForPortfolioCard = (props: ProjectForPortfolioCardType) => {
   return (
     <StyledProjectForPortfolioCard>
-      <FlexWrapper justify="center" align={"center"}>
-        <YellowStyledButton rotation={180} />
+      <YellowStyledButton rotation={180} stroke={`${theme.colors.text}`}/>
         <div id={"card"}>
             <img src={props.src} alt={"card"}></img>
-          <div >
+          <StyledDescriptionPortfolioCard>
             <h3>{props?.title || "Default title"}</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut
@@ -31,22 +31,31 @@ export const ProjectForPortfolioCard = (props: ProjectForPortfolioCardType) => {
             <strong>
               <a>More →</a>
             </strong>
-          </div>
+          </StyledDescriptionPortfolioCard>
         </div>
-        <YellowStyledButton />
-      </FlexWrapper>
+      <YellowStyledButton stroke={`${theme.colors.text}`}/>
     </StyledProjectForPortfolioCard>
   );
 };
+const StyledDescriptionPortfolioCard = styled.div`
+  padding: 10% 5%;
+  margin: auto 0;
+  & p {
+    margin: 30px;
+  }
+  max-width: 45%;
+`
 
 const StyledProjectForPortfolioCard = styled.div`
-  width: 75%;
-  margin: 50px auto;
+  display: flex;
+  max-height: 30%;
+  margin: 40px auto;
   border-radius: 40px;
   
   img {
     border-radius: 40px;
-    height: 30%;
+    height: 85%;
+    margin: auto 0;
   }
   
   #card {
@@ -54,13 +63,11 @@ const StyledProjectForPortfolioCard = styled.div`
     border-radius: 20px;
     display: flex;
     justify-content: space-around;
-  }
-  
-  #card div{   
-    max-width: 30%;
+    max-width: 80%;
   }
   
   a {
   color: #e2a100;
   }
+  
 `;

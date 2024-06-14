@@ -11,6 +11,8 @@ type SkillCardTypes = {
   width?: string;
   height?: string;
   viewBox?: string;
+  fill?: string;
+  stroke?: string;
 };
 
 export const SkillCard = (props: SkillCardTypes) => {
@@ -22,6 +24,8 @@ export const SkillCard = (props: SkillCardTypes) => {
           width={props.width || "65px"}
           height={props.height || "50px"}
           viewBox={props.viewBox || "0 0 50 50"}
+          fill={props.fill || "none"}
+          stroke={props.stroke || "none"}
         ></Icon>
         <span>{props.text}</span>
       </FlexWrapper>

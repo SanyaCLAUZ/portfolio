@@ -3,6 +3,8 @@ import styled from "styled-components";
 import sourceImage from "../../../assets/images/aboutMePicture.webp";
 import {Container} from "../../../components/Container";
 import {FlexWrapper} from "../../../components/FlexWrapper";
+import elips from "../../../assets/images/elips.svg";
+import {theme} from "../../../styles/Theme";
 
 type AboutSectionProps = {
     backgroundSrc: string;
@@ -10,8 +12,9 @@ type AboutSectionProps = {
 
 export const AboutSection = (props: AboutSectionProps) => {
     return (
-        <StyledAbout {...props}>
+        <StyledAbout  {...props} style={{ position: 'relative' }}>
             <Container>
+                <StyledElipsAboutMeSVG src={elips} alt="Elips Main Block" />
                 <FlexWrapper align={"center"} justify={"center"}>
                     <div id={"images"}>
                         <img id={"first_img"} src={sourceImage} alt="smth"></img>
@@ -46,13 +49,17 @@ export const AboutSection = (props: AboutSectionProps) => {
         </StyledAbout>
     );
 };
+const StyledElipsAboutMeSVG = styled.img`
+    position: absolute;
+    top: 90%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    overflow: hidden;
+    height: 180%;
+`
 
 const StyledAbout = styled.section<AboutSectionProps>`
-    margin: 0 auto;
-    background-image: url(${(props) => props.backgroundSrc ? `${props.backgroundSrc}` : ""});
-    background-repeat: no-repeat;
-    background-position: top;
-
     #images {
         display: flex;
         flex-direction: column;
@@ -68,16 +75,17 @@ const StyledAbout = styled.section<AboutSectionProps>`
 
     p {
         background-color: #2C2C2C;
-        width: 300px;
+        max-width: 370px;
         padding: 50px 50px 50px 30px;
         border-radius: 10px;
-        font-size: 14px;
+        font-size: 18px;
     }
 
-    img {
+    #second_img, #first_img, #second_img {
         border-radius: 5%;
         padding: 10px;
         background-color: #2C2C2C;
         height: 250px;
     }
+
 `;
