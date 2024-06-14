@@ -18,12 +18,12 @@ type SkillCardTypes = {
 export const SkillCard = (props: SkillCardTypes) => {
   return (
     <StyledSkillCard>
-      <FlexWrapper direction="column" justify={"space-around"} align="center" style={{ height: "100%" }}>
+      <FlexWrapper direction="column" justify={"space-around"} align="center">
         <Icon
           iconId={props.iconId || "logo"}
-          width={props.width || "65px"}
-          height={props.height || "50px"}
-          viewBox={props.viewBox || "0 0 50 50"}
+          width={props.width || "75px"}
+          height={props.height || "75px"}
+          viewBox={props.viewBox || "0 0 25 25"}
           fill={props.fill || "none"}
           stroke={props.stroke || "none"}
         ></Icon>
@@ -48,7 +48,6 @@ const StyledSkillCard = styled.div`
   width: 250px;
   height: 250px;
   border-radius: 29px;
-  margin: 20px;
   background-color: #2a2a2a;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 `;

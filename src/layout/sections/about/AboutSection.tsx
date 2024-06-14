@@ -12,7 +12,7 @@ type AboutSectionProps = {
 
 export const AboutSection = (props: AboutSectionProps) => {
     return (
-        <StyledAbout  {...props} style={{ position: 'relative' }}>
+        <StyledAbout  {...props}>
             <Container>
                 <StyledElipsAboutMeSVG src={elips} alt="Elips Main Block" />
                 <FlexWrapper align={"center"} justify={"center"}>
@@ -60,6 +60,7 @@ const StyledElipsAboutMeSVG = styled.img`
 `
 
 const StyledAbout = styled.section<AboutSectionProps>`
+    position: relative;
     #images {
         display: flex;
         flex-direction: column;

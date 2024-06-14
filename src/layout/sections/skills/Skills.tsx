@@ -8,64 +8,43 @@ export const Skills = () => {
     return (
         <StyledSkills>
             <Container>
-                <FlexWrapper justify="center" wrap="wrap">
+                <FlexWrapper justify="center" wrap="wrap" gap="40px">
                     <SkillCard
                         iconId={"presentation"}
                         text={"Frontend"}
-                        height="75px"
-                        width="75px"
-                        viewBox="0 0 25 25"
                         stroke={"#00C4F0"}
 
                     />
                     <SkillCard
                         iconId={"chart"}
                         text={"Frontend"}
-                        height="75px"
-                        width="75px"
-                        viewBox="0 0 25 25"
                         stroke={"#00C4F0"}
 
                     />
                     <SkillCard
                         iconId={"code"}
                         text={"Frontend"}
-                        height="75px"
-                        width="75px"
-                        viewBox="0 0 25 25"
                         stroke={"#00C4F0"}
 
                     />
                     <SkillCard
                         iconId={"desktop"}
                         text={"Frontend"}
-                        height="75px"
-                        width="75px"
-                        viewBox="0 0 25 25"
                         stroke={"#00C4F0"}
                     />
                     <SkillCard
                         iconId={"drone"}
                         text={"Frontend"}
-                        height="75px"
-                        width="75px"
-                        viewBox="0 0 25 25"
                         stroke={"#00C4F0"}
                     />
                     <SkillCard
                         iconId={"chevron"}
                         text={"Frontend"}
-                        height="75px"
-                        width="75px"
-                        viewBox="0 0 25 25"
                         stroke={"#00C4F0"}
                     />
                     <SkillCard
                         iconId={"chart"}
                         text={"Frontend"}
-                        height="75px"
-                        width="75px"
-                        viewBox="0 0 25 25"
                         stroke={"#00C4F0"}
                     />
                 </FlexWrapper>
@@ -75,5 +54,7 @@ export const Skills = () => {
 };
 
 const StyledSkills = styled.section`
-    margin: 0 auto;
+    div:first-child {
+        padding: 50px 0;
+    }
 `;

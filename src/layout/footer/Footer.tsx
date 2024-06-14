@@ -5,6 +5,8 @@ import {YellowStyledButton} from "../../components/globalYellowStyledButton/Yell
 import {Container} from "../../components/Container";
 import {FlexWrapper} from "../../components/FlexWrapper";
 
+
+
 export const Footer = () => {
     return (
         <StyledFooter>
