@@ -54,7 +54,4 @@ export const Skills = () => {
 };
 
 const StyledSkills = styled.section`
-    div:first-child {
-        padding: 50px 0;
-    }
 `;

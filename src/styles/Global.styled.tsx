@@ -31,6 +31,10 @@ export const GlobalStyled = createGlobalStyle`
     ul {
         list-style: none;
     }
+    
+    section{
+        padding: 100px 0;
+    }
 
     section:nth-of-type(3n+1) {
         background: ${theme.colors.secondaryBg};
